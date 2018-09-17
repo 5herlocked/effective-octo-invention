@@ -7,13 +7,12 @@ public class Graduate extends Student {
 	private String concentration; //"specialisation"
 	private int years; //years spent as a grad student
 
-	public Graduate (String major, double gpa, int creditHours) { super(major, gpa, creditHours); }
-
-	public Graduate(String degree, String concentration, int years, String major, double gpa, int creditHours) {
-		this(major, gpa, creditHours);
+	public Graduate(String degree, String concentration, String major, double gpa) {
 		this.degree = degree;
 		this.concentration = concentration;
 		this.years = years;
+		super.setGpa(gpa);
+		super.setMajor(major);
 	}
 
 	public String getDegree() {
@@ -43,7 +42,7 @@ public class Graduate extends Student {
 	@Override
 	public String toString() {
 		return "Graduate{" +
-				"Gegree='" + degree + '\'' +
+				"Degree='" + degree + '\'' +
 				", Concentration='" + concentration + '\'' +
 				", Years=" + years +
 				'}';
