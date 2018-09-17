@@ -1,6 +1,6 @@
 //author: shardul vaidya
 //date: 17/9/18
-//Student class for Homework 2
+//Graduate class for Homework 2
 
 public class Graduate extends Student {
 	private String degree; //"masters or phd"

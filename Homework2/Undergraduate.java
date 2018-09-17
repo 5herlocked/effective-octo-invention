@@ -1,6 +1,6 @@
 //author: shardul vaidya
 //date: 17/9/18
-//Student class for Homework 2
+//Undergraduate class for Homework 2
 
 public class Undergraduate {
     private boolean honours;
