@@ -1,2 +1,6 @@
 #ignore compiled files
 *.class
+#ignore intellij files
+*.iml
+#ignore directory
+out/
