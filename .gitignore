@@ -4,3 +4,5 @@
 *.iml
 #ignore directory
 out/
+#ignore xml
+*.xml
