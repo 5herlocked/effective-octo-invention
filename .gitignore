@@ -6,3 +6,5 @@
 out/
 #ignore xml
 *.xml
+#ignore .idea directory
+.idea/
