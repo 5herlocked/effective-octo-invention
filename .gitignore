@@ -8,3 +8,7 @@ out/
 *.xml
 #ignore .idea directory
 .idea/
+#any hidden file
+.*
+#ignore in-class java
+InClass.*
