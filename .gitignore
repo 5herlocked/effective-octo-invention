@@ -1,14 +1,10 @@
 #ignore compiled files
 *.class
-#ignore intellij files
-*.iml
 #ignore directory
 out/
 #ignore xml
 *.xml
 #ignore .idea directory
 .idea/
-#any hidden file
-.*
 #ignore in-class java
 InClass.*
