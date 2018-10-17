@@ -29,9 +29,10 @@ public class Homework4 {
     private static String starString(int n) { return starString(n, "*"); }
     
     private static String starString(int n, String s) {
-        if (n == 0)
-            return "*";
+        if (n == 1)
+            return "**";
         
+        // Compund effect on the number of strings per iteration
         String number = s + s;
         
         return number + starString(n-1, number);
