@@ -3,10 +3,10 @@
 
 import java.util.Arrays;
 
-public class Homework5 {
+class Homework5 {
 	public static void main (String ... args) {
 		int[] array = {5, -9, 1, 2, -14, 7, 24};
-		int[] old_array = {-11, 42, 11, 6, -9, 1};
+		int[] old_array = {-5, 9,-1, -4, 14, -7, 22};
 
 		System.out.println("Before: " + Arrays.toString(array));
 		System.out.println("Selection Sort 1: ");
@@ -29,6 +29,7 @@ public class Homework5 {
 				if (array[j] > array[index])
 					index = j;
 
+			if (isSorted(array)) return;
 			swap(array, index, i);
 			System.out.println(Arrays.toString(array));
 		}
@@ -38,8 +39,8 @@ public class Homework5 {
 	Selection sort that swaps the minimum value into the beginning and the maximum value into the end through the use of
 	a double counter for loop
 	 */
-	private static void doubleSelectionSort (int [] array) {
-	    for (int i = 0, j = array.length - 1; i < array.length && j >= 0; i++, j--)
+	static void doubleSelectionSort (int [] array) {
+	    for (int i = 0, j = array.length - 1; (i < array.length && j >= 0); i++, j--)
         {
             int minIndex = i;
             int maxIndex = j;
@@ -52,16 +53,28 @@ public class Homework5 {
                 if (array[b] > array[maxIndex])
                     maxIndex = b;
 
+            if (isSorted(array)) return;
+
             swap(array, minIndex, i);
+            System.out.println(Arrays.toString(array));
             swap(array, maxIndex, j);
             System.out.println(Arrays.toString(array));
         }
 	}
 
 	// swap for code reuse
-	private static void swap (int[] array, int max, int location) {
+	static void swap (int[] array, int max, int location) {
 		int temp = array[location];
 		array[location] = array[max];
 		array[max] = temp;
 	}
+
+	// increasing efficiency i.e. saving compute cycles i hope
+    static boolean isSorted(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1])
+                return false;
+        }
+        return true;
+    }
 }
