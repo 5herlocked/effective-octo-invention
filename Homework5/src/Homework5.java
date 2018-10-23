@@ -1,65 +1,67 @@
-//@Author:Shardul Vaidya
+//@author Shardul Vaidya
 //Thursday 12:45
+
 import java.util.Arrays;
 
 public class Homework5 {
 	public static void main (String ... args) {
-		int[] array = {5, 9, 1, -5, 14, -19, 24};
-		int[] old_array = array;
+		int[] array = {5, -9, 1, 2, -14, 7, 24};
+		int[] old_array = {-11, 42, 11, 6, -9, 1};
 
 		System.out.println("Before: " + Arrays.toString(array));
 		System.out.println("Selection Sort 1: ");
 		selectionSort(array);
 		System.out.println();
+		System.out.println("Before: " + Arrays.toString(old_array));
 		System.out.println("Selection Sort 2: ");
 		doubleSelectionSort(old_array);
 		System.out.println();
 	}
 
+	/*
+	Selection sort that swaps the max element to the end of the array instead of the normal implementation
+	 */
 	private static void selectionSort (int[] array) {
-		for(int i = 0; i < array.length; i++) {
-			var maxIndx = array.length-1;
-			for (int j = i + 1; j < array.length; j++) {
-				if (array[j] > array[maxIndx])
-					maxIndx = j;
-			}
+		for (int i = array.length-1; i >= 0; i--)
+		{
+			int index = i;
+			for (int j = i - 1; j >= 0; j--)
+				if (array[j] > array[index])
+					index = j;
 
-			swap (array, maxIndx, i);
+			swap(array, index, i);
 			System.out.println(Arrays.toString(array));
 		}
 	}
 
+	/*
+	Selection sort that swaps the minimum value into the beginning and the maximum value into the end through the use of
+	a double counter for loop
+	 */
 	private static void doubleSelectionSort (int [] array) {
-		for(int i = 0; i < array.length; i++) {
-			int maxIndx = i, minIndx = i;
-			for (int j = i + 1; j < array.length; j++) {
-				if (array[j] > array[maxIndx])
-					maxIndx = j;
-				if (array[j] < array[minIndx])
-					minIndx = j;
-			}
+	    for (int i = 0, j = array.length - 1; i < array.length && j >= 0; i++, j--)
+        {
+            int minIndex = i;
+            int maxIndex = j;
 
-			swap(array, minIndx, i);
-			swap(array, maxIndx, i);
-			System.out.println(Arrays.toString(array));
-		}
+            for (int a = i + 1; a < array.length; a++)
+                if (array[a] < array[minIndex])
+                    minIndex = a;
+
+            for (int b = j - 1; b >= 0; b--)
+                if (array[b] > array[maxIndex])
+                    maxIndex = b;
+
+            swap(array, minIndex, i);
+            swap(array, maxIndex, j);
+            System.out.println(Arrays.toString(array));
+        }
 	}
 
+	// swap for code reuse
 	private static void swap (int[] array, int max, int location) {
 		int temp = array[location];
 		array[location] = array[max];
 		array[max] = temp;
 	}
-
-	/*private static String printArray (int[] array) {
-		StringBuilder concat = new StringBuilder();
-
-		for(int i = 0; i < array.length; i++) {
-			if (i == array.length - 1) concat.append(array[i] + "]");
-			else if (i == 0) concat.append("[" + array[i]);
-			else concat.append(array[i] + ", ");
-		}
-
-		return concat.toString();
-	}*/
 }
