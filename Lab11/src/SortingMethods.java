@@ -1,3 +1,6 @@
+//@author Shardul Vaidya
+//Thursday 12:45
+
 import java.util.Arrays;
 
 public class SortingMethods {
