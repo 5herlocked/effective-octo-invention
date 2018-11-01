@@ -2,9 +2,5 @@
 *.class
 #ignore directory
 out/
-#ignore xml
-*.xml
-#ignore .idea directory
-.idea/
 #ignore in-class java
 InClass.*
