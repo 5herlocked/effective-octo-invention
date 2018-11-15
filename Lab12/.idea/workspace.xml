@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b09bdd37-6915-485b-a65d-95f7220ac614" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CircleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Incremental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IncrementerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RandomIncrementer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SequentialIncrementer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab11/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b09bdd37-6915-485b-a65d-95f7220ac614" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +27,10 @@
     <session id="1702101459">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,23 +56,15 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="512">
               <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
-                <element signature="e#120#121#0" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
                 <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,18 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SequentialIncrementer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -126,20 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RandomIncrementer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="272">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +153,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,6 +164,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,27 +220,23 @@
       <option name="presentableId" value="Default" />
       <updated>1541699508000</updated>
       <workItem from="1541699511793" duration="1896000" />
+      <workItem from="1542212343008" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1896000" />
+    <option name="totallyTimeSpent" value="1948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13546667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13653333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29609543" />
@@ -286,15 +244,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -303,19 +266,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
+        <state relative-caret-position="512">
           <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -336,37 +291,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SequentialIncrementer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomIncrementer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="272">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
