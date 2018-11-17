@@ -6,40 +6,34 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class ReboundPanel extends JPanel {
-    private final int WIDTH = 720, HEIGHT = 480;
-    private final int DELAY = 2;
+    private final int WIDTH = 720, HEIGHT = 360;
+    private final int DELAY = 20;
 
-    private ImageIcon image;
     private Timer timer;
     private int x, y, moveX;
 
-    public ReboundPanel () {
-        timer = new Timer(DELAY, new ReboundListener());
-        image = new ImageIcon("car.png");
+    public ReboundPanel() {
         x = 0;
         y = 40;
-        moveX = 1;
+        moveX = 2;
+
+        timer = new Timer(DELAY, e -> moveCar());
 
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setBackground(Color.white);
         timer.start();
     }
 
-    public void paintComponent (Graphics page)
-    {
+    public void paintComponent(Graphics page) {
         super.paintComponent(page);
-        image.paintIcon(this, page, x, y);
+        Car.drawCar(page, x, y);
     }
 
-    private class ReboundListener implements ActionListener {
+    private void moveCar() {
+        x += moveX;
 
-        public void actionPerformed (ActionEvent event) {
-            x += moveX;
-
-            if (x >= WIDTH + image.getIconWidth())
-                x = 0 - image.getIconWidth();
-
-            repaint();
-        }
+        if (x >= WIDTH + Car.CAR_WIDTH)
+            x = 0 - Car.CAR_WIDTH;
+        repaint();
     }
 }

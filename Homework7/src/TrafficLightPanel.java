@@ -3,61 +3,68 @@
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class TrafficLightPanel extends JPanel {
 
-    private final int WIDTH = 720, HEIGHT = 480;
+    private final int WIDTH = 720, HEIGHT = 240;
 
     private JButton nextLight;
-    private ImageIcon redLight, yellowLight, greenLight;
-    private ImageIcon current;
     private int x, y;
     private int currentNumber;
 
     public TrafficLightPanel () {
-        redLight = new ImageIcon("trafficLightRed.jpg");
-        yellowLight = new ImageIcon("trafficLightYellow.jpg");
-        greenLight  = new ImageIcon("trafficLightGreen.jpg");
-
         nextLight = new JButton("Next Light!");
 
         nextLight.addActionListener(e -> getNextLight());
-        
-        current = new ImageIcon(redLight.getImage().getScaledInstance(150, 300, Image.SCALE_DEFAULT));
 
-        x = 0;
-        y = 0;
-        currentNumber = 0;
+        x = 500;
+        y = 10;
+        currentNumber = 1;
 
         add(nextLight);
         setBackground(Color.cyan);
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
 
+    private void drawTrafficLight(int light) {
+        Graphics g = this.getGraphics();
+
+        g.fillRect(x,y, 60, 160);
+
+        if (light == 0){
+            g.setColor(Color.red);
+            g.fillOval(x+10,y+10, 40, 40);
+        }
+        else if (light == 1) {
+            g.setColor(Color.yellow);
+            g.fillOval(x+10, y + 60, 40, 40);
+        }
+        else if (light == 2) {
+            g.setColor(Color.green);
+            g.fillOval(x+10, y + 110, 40, 40);
+        }
+    }
+
     public void paintComponent (Graphics page)
     {
         super.paintComponent(page);
-        current.paintIcon(this, page, x, y);
     }
 
     private void getNextLight() {
         if (currentNumber == 0)
         {
-            current = new ImageIcon(greenLight.getImage().getScaledInstance(150, 300, Image.SCALE_DEFAULT));
             currentNumber = 2;
+            drawTrafficLight(currentNumber);
         }
         else if (currentNumber == 1)
         {
-            current = new ImageIcon(redLight.getImage().getScaledInstance(150, 300, Image.SCALE_DEFAULT));
             currentNumber = 0;
+            drawTrafficLight(currentNumber);
         }
         else if (currentNumber == 2)
         {
-            current = new ImageIcon(yellowLight.getImage().getScaledInstance(150, 300, Image.SCALE_DEFAULT));
             currentNumber = 1;
+            drawTrafficLight(currentNumber);
         }
-
-        repaint();
     }
 }
